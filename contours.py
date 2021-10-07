@@ -12,7 +12,7 @@ edges = cv.Canny(blur, 125, 175)
 # ret, thresh = cv.threshold(gray, 125, 255, cv.THRESH_BINARY)
 
 contours, heirarchies = cv.findContours(edges, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
-print(f'{len(contours)} countour(s) found!')
+print(f"{len(contours)} countour(s) found!")
 
 cv.drawContours(blank, contours, -1, (0,0,255), thickness=1)
 
